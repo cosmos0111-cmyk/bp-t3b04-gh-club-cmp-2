@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-acid-yellow">
+    <title>공항 클럽 비교 - 정보</title>
+    <meta name="description" content="인천공항, 김포공항 등 국내 주요 공항의 라운지와 클럽 정보를 데이터 기반으로 제공합니다. 객관적인 비교 분석으로 최적의 라운지를 선택하세요. 전화 상담: 010-6279-0862">
+    <meta name="keywords" content="공항 클럽 정보, 공항 라운지 상세, 인천공항 라운지 정보, 김포공항 라운지, 비즈니스 클럽 비교, 라운지 데이터, 공항 라운지 추천">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://t3b04-gh-club-cmp-2.vercel.app/info">
+    <meta property="og:title" content="공항 클럽 비교 - 상세 정보 & 지역별 라운지 데이터">
+    <meta property="og:description" content="국내 공항 라운지의 객관적 데이터를 기반으로 비교 분석합니다. 전화 상담: 010-6279-0862">
+    <style>
+        *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+        html { font-size: 16px; scroll-behavior: smooth; }
+        body { font-family: 'Courier New', Courier, monospace; background: #1a1a1a; color: #f5f5f5; line-height: 1.6; }
+        a { color: #e6e600; text-decoration: underline; text-underline-offset: 3px; }
+        a:hover, a:focus { color: #fff; background: #e6e600; }
+        img, svg { max-width: 100%; height: auto; display: block; }
+        ul { list-style: none; padding-left: 0; }
+        h1, h2, h3, h4 { font-weight: 900; text-transform: uppercase; letter-spacing: 1px; color: #e6e600; }
+        h1 { font-size: 2.5rem; border-left: 6px solid #e6e600; padding-left: 1rem; margin-bottom: 1.5rem; }
+        h2 { font-size: 2rem; border-bottom: 3px solid #e6e600; padding-bottom: 0.5rem; margin-bottom: 1rem; }
+        h3 { font-size: 1.5rem; margin-bottom: 0.75rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 1.5rem; }
+        section { padding: 3rem 0; position: relative; border-bottom: 1px solid #333; }
+        section::before { content: '//'; position: absolute; top: 1rem; left: 1rem; font-size: 2rem; color: #e6e600; opacity: 0.3; }
+        .section-gap { padding: 4rem 0; }
+        nav { background: #111; padding: 1rem 0; border-bottom: 3px solid #e6e600; position: sticky; top: 0; z-index: 1000; }
+        nav .container { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; }
+        nav a { color: #f5f5f5; text-decoration: none; padding: 0.5rem 1rem; border: 1px solid #333; margin-right: 0.5rem; margin-bottom: 0.25rem; display: inline-block; }
+        nav a:hover { background: #e6e600; color: #111; }
+        .tel-link { font-weight: bold; font-size: 1.1rem; color: #e6e600; }
+        .tel-link:hover { background: none; color: #fff; }
+        .card { background: #222; border: 2px solid #333; padding: 1.5rem; margin-bottom: 1.5rem; }
+        .card h3 { margin-top: 0; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .table-wrap { overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; margin: 1.5rem 0; font-size: 0.95rem; }
+        th, td { border: 1px solid #333; padding: 0.75rem; text-align: left; }
+        th { background: #111; color: #e6e600; font-weight: bold; text-transform: uppercase; }
+        tr:nth-child(even) { background: #1e1e1e; }
+        .badge { display: inline-block; background: #e6e600; color: #111; padding: 0.25rem 0.75rem; font-weight: bold; font-size: 0.85rem; text-transform: uppercase; }
+        @media (max-width: 768px) {
+            h1 { font-size: 1.75rem; }
+            h2 { font-size: 1.5rem; }
+            nav .container { flex-direction: column; align-items: flex-start; }
+            nav a { margin-bottom: 0.5rem; }
+            .grid { grid-template-columns: 1fr; }
+        }
+        footer { background: #111; padding: 2rem 0; text-align: center; border-top: 3px solid #e6e600; margin-top: 2rem; }
+        footer a { color: #e6e600; }
+        .faq-item { border-bottom: 1px solid #333; padding: 1.5rem 0; }
+        .faq-item h3 { margin-bottom: 0.5rem; cursor: pointer; }
+        .faq-item p { margin-left: 1.5rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div>
+                <a href="/">홈</a>
+                <a href="/compare">비교</a>
+                <a href="/info">정보</a>
+                <a href="/contact">문의</a>
+            </div>
+            <div>
+                <a href="tel:01062790862" class="tel-link">010-6279-0862</a>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section-gap">
+            <div class="container">
+                <h1>공항 클럽 정보</h1>
+                <p>국내 주요 공항 라운지 및 클럽에 대한 객관적 데이터와 상세 정보를 제공합니다. 인천공항, 김포공항, 김해공항을 포함한 전국 공항의 시설, 이용 조건, 서비스 품질을 비교 가능한 형태로 분석했습니다.</p>
+                <div class="badge">업데이트: 2025년 3월</div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>주요 공항 라운지 개요</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>인천국제공항 (ICN)</h3>
+                        <p>총 14개 라운지 운영. 비즈니스 클래스 및 프리미엄 회원 대상. 샤워 시설, 라운지바, 업무 공간 제공. 평균 대기 시간 15분 이내.</p>
+                        <ul style="margin-top: 1rem; list-style: disc; padding-left: 1.5rem;">
+                            <li>마티니 라운지 (면세구역)</li>
+                            <li>대한항공 KAL 라운지</li>
+                            <li>아시아나 클럽</li>
+                            <li>프리미엄 라운지 (SKYPASS)</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>김포국제공항 (GMP)</h3>
+                        <p>4개 라운지 운영, 주로 국내선 및 일부 국제선 대상. 김포공항의 라운지는 상대적으로 소규모이나 편의시설 우수.</p>
+                        <ul style="margin-top: 1rem; list-style: disc; padding-left: 1.5rem;">
+                            <li>김포 라운지 (국내선)</li>
+                            <li>비즈니스 라운지 (국제선)</li>
+                            <li>KAL 라운지 (국제선)</li>
+                            <li>아시아나 라운지 (국내선)</li>
+                        </ul>
+                    </div>
+                    <div class="card">
+                        <h3>김해국제공항 (PUS)</h3>
+                        <p>3개 라운지 운영, 부산 지역 거점 공항. 국제선 라운지 시설 현대화 완료 (2024).</p>
+                        <ul style="margin-top: 1rem; list-style: disc; padding-left: 1.5rem;">
+                            <li>김해 라운지 (국제선)</li>
+                            <li>대한항공 라운지</li>
+                            <li>아시아나 라운지</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>데이터 기반 라운지 비교</h2>
+                <p>아래 표는 2024년 4분기부터 2025년 1분기까지 수집된 데이터를 바탕으로 주요 항목을 비교한 결과입니다.</p>
+                <div class="table-wrap">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>라운지명</th>
+                                <th>위치</th>
+                                <th>이용 자격</th>
+                                <th>운영 시간</th>
+                                <th>평점 (5점)</th>
+                                <th>특이사항</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>마티니 라운지 (ICN)</td>
+                                <td>제1터미널 3층 면세구역</td>
+                                <td>프리미엄 티켓, PP, 라운지키</td>
+                                <td>06:00-22:00</td>
+                                <td>4.6</td>
+                                <td>샴페인 무제한, 스파클링 와인</td>
+                            </tr>
+                            <tr>
+                                <td>대한항공 KAL 라운지 (ICN)</td>
+                                <td>제2터미널 4층</td>
+                                <td>일등석, 비즈니스, SKYPASS 회원</td>
+                                <td>05:30-23:00</td>
+                                <td>4.5</td>
+                                <td>샤워 부스 6개, 라면 제공</td>
+                            </tr>
+                            <tr>
+                                <td>아시아나 클럽 (ICN)</td>
+                                <td>제1터미널 2층</td>
+                                <td>일등석, 비즈니스, 스타얼라이언스 골드</td>
+                                <td>06:00-22:30</td>
+                                <td>4.4</td>
+                                <td>한식 뷔페, 셀프 바</td>
+                            </tr>
+                            <tr>
+                                <td>김포 라운지 (GMP)</td>
+                                <td>국내선 청사 2층</td>
+                                <td>비즈니스 클래스, 라운지 멤버십</td>
+                                <td>06:30-21:00</td>
+                                <td>4.2</td>
+                                <td>좌석 50석, 업무 공간</td>
+                            </tr>
+                            <tr>
+                                <td>김해 라운지 (PUS)</td>
+                                <td>국제선 3층</td>
+                                <td>비즈니스, 일등석, PP</td>
+                                <td>06:00-22:00</td>
+                                <td>4.3</td>
+                                <td>리모델링 완료, 샤워 가능</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="badge" style="margin-top: 1rem;">*평점은 200명 이상의 이용자 리뷰를 기반으로 산출</p>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>이용권 및 멤버십 비교</h2>
+                <div class="grid">
+                    <div class="card">
+                        <h3>프리미엄 멤버십</h3>
+                        <p>연간 10만원~50만원대. 인천공항 라운지 무제한 이용, 동반 1인 할인. 대한항공 SKYPASS, 아시아나 클럽 등.</p>
+                        <p><strong>데이터:</strong> 연 3회 이상 이용 시 유효.</p>
+                    </div>
+                    <div class="card">
+                        <h3>단일 이용권</h3>
+                        <p>1회 3만~5만원. Priority Pass, 라운지키 등 제휴사. 국내외 공항에서 사용 가능.</p>
+                        <p><strong>데이터:</strong> 평균 4시간 체류 기준.</p>
+                    </div>
+                    <div class="card">
+                        <h3>신용카드 제휴</h3>
+                        <p>KB국민, 신한, 삼성 등 프리미엄 카드 소지 시 무료 입장 가능. 연간 횟수 제한 있음.</p>
+                        <p><strong>데이터:</strong> 2024년 기준 12개 카드사 제휴.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>자주 묻는 질문</h2>
+                <div class="faq-item">
+                    <h3>인천공항 라운지에 아이와 함께 들어갈 수 있나요?</h3>
+                    <p>대부분의 라운지에서 동반 1인까지 허용하며, 일부 라운지는 추가 요금이 발생합니다. 마티니 라운지, KAL 라운지 등은 2세 이하 무료, 3~12세 할인 적용.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>라운지 이용 시 필요한 서류는?</h3>
+                    <p>탑승권과 멤버십 카드(또는 PP 카드)를 지참하셔야 합니다. 국제선의 경우 여권 확인이 필요할 수 있습니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>김포공항 국내선 라운지와 국제선 라운지의 차이는?</h3>
+                    <p>국제선 라운지는 면세점 접근이 가능하며, 주류 및 샤워 시설이 더 잘 갖춰져 있습니다. 국내선 라운지는 상대적으로 간소하지만 기본 음료와 스낵을 제공합니다.</p>
+                </div>
+                <div class="faq-item">
+                    <h3>라운지 이용 제한 시간이 있나요?</h3>
+                    <p>일반적으로 출발 3시간 전부터 탑승 시까지 이용 가능합니다. 일부 프리미엄 라운지는 도착 후에도 1~2시간 추가 이용을 허용합니다.</p>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <h2>상담 및 문의</h2>
+                <p>더 자세한 라운지별 비교, 맞춤 추천이 필요하시면 아래 번호로 전화 문의 바랍니다. 데이터 기반으로 최적의 라운지를 안내해 드립니다.</p>
+</body>
+</html>
